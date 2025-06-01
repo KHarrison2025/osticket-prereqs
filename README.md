@@ -29,26 +29,93 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Installation Steps</h2>
 
 <p>
-![Screenshot 2025-05-31 160333](https://github.com/user-attachments/assets/af02f3d6-285e-4286-afd2-cc3748a4c9ef)
-
+<img src="https://i.imgur.com/4niSguj.png"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+The first step is to create a Windows 10 virtual machine in Microsoft Azure with 4vCPUs. Use the public IP address to connect via Remote Desktop and log in.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5GNUn5P.png"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Whilst in the virtual machine, download and unzip the osTicket installation files to the desktop.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/hVnuX97.png"/>
+</p>
+<p>
+<img src="https://i.imgur.com/rrgk3R5.png"/>
+</p>
+<p>
+Enable Internet Information Services in Windows and enable CGI under World Wide Web Services and Application Development Features.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/bwBMu5e.png"/>
+</p>
+<p>
+Install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) from the osTicket installation files folder on the desktop.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/c94ysod.png"/>
+</p>
+<p>
+  Install the Rewrite Module(rewrite_amd64_en-US.msi) from the same folder.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/5Xq885g.png"/>
+</p>
+<p>
+  Create the directory "C:\PHP" and unzip PHP 7.3.8(php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/kxm4oAd.png"/>
+</p>
+<p>
+  Install Microsoft C++ Redistributable(VC_redist.x86.exe)
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/dy7GatH.png"/>
+</p>
+<p>
+<img src="https://imgur.com/a/h5Te2gO"/>
+</p>
+<p>
+  Install MySQL 5.5.62(mysql-5.5.62-win32.msi) with typical setup. Automatically launch the configuration wizard after installation. Set to standard configuration. While not the safest security option, the password "root" will be used for demonstrative purposes this time.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/ON9r7hU.png"/>
+</p>
+<p>
+  Open IIS as Administrator. Within IIS, register PHP(PHP Manager -> C:\PHP\php-cgi.exe). Reload ISS(stop and start).
+</p>
+<p>
+<img src="https://i.imgur.com/iP8h20f.png"/>
+</p>
+<p>
+<img src="https://i.imgur.com/iegM0aU.png"/>
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/kxm4oAd.png"/>
+</p>
+<p>
+  Install Microsoft C++ Redistributable(VC_redist.x86.exe)
 </p>
 <br />
