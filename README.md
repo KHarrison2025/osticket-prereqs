@@ -91,7 +91,7 @@ Install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) from the osTicket inst
 <img src="https://i.imgur.com/dy7GatH.png"/>
 </p>
 <p>
-<img src="https://imgur.com/a/h5Te2gO"/>
+<img src="https://i.imgur.com/soAGkaw.png"/>
 </p>
 <p>
   Install MySQL 5.5.62(mysql-5.5.62-win32.msi) with typical setup. Automatically launch the configuration wizard after installation. Set to standard configuration. While not the safest security option, the password "root" will be used for demonstrative purposes this time.
